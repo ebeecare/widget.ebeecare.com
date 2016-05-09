@@ -3,7 +3,7 @@ var EbeecareEmbedBookingBBGColor = "#1f7eb7";
 var EbeecareEmbedBookingBTextColor = "rgb(255, 255, 255)";
 //EbeecareEmbedLink = "https://www.ebeecare.com/booking1";
 //EbeecareEmbedLink = "http://192.168.0.194:3000/embed/booking1";
-var EbeecareEmbedLink = "http://staging.ebeecare.com/?widget=true&organization=" + EBEECARE_PARTNER_ID;
+var EbeecareEmbedLink = "http://staging.ebeecare.com/booking1?widget=true&organization=" + EBEECARE_PARTNER_ID;
 //var EbeecareEmbedLink = "http://www.sina.com.cn/?widget=true&organization=" + EBEECARE_PARTNER_ID;
 var EbeecareEmbedWidgetTitle = "Ebeecare booking";
 var EbeecareEmbedWidgetColor = "rgb(0, 0, 0)";
