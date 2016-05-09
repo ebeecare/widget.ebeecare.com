@@ -10,6 +10,7 @@ var EbeecareEmbedWidgetColor = "rgb(0, 0, 0)";
 var EbeecareEmbedWidgetBGColor = "#ff9a00";
 var EbeecareEmbedWidgetLeft = "right";
 var EbeecareEmbedPageName = "'getso'";
+var EbeecareStaticFilesUrl = "http://widget.ebeecare.com/";
 
 var SOE = function() {
     this.bookingPos = 1;
@@ -68,7 +69,7 @@ SOE.prototype.getBookingCode = function() {
             '<div id="SOBookingDiv" style="display:block;padding:0 0.7em 0 0.7em; margin:0px 0px 1em 0px;">\
         <div style="width:100%;;margin-bottom:0.4em;">\
         <div style="float:right;width:56%">\
-    <img src="mm.png" style="max-width: 100%; height: auto;"></div>\
+    <img src=' + '"' + EbeecareStaticFilesUrl  +'mm.png" style="max-width: 100%; height: auto;"></div>\
         <div style="float:left;margin-top:30px;width:40%;display:inline-block">\
         <p style="' + this.widgetMeinHeadStyle.replace("margin:0.8em auto;", "margin:" + (this.isMobileView ? "1em auto 0 auto;" : "0.8em auto 0.567em auto;")) + '"> ' +
             "Looking" + "</p>" +
@@ -126,7 +127,7 @@ SOE.prototype.getWidgetCode = function() {
 
     this.code = '<a href="javascript:void(1);" ' + this.onclickProperty + ' style="text-decoration:none;">\
     <div id="EBKWidgetTitle" style="' + widgetHeadStyle + "background-color:" + (this.widgetBGColor == "" ? "#333" : this.widgetBGColor) + ';">\
-    <div align="left" style="float:left;width:80%"><img src="ebk2.png" ></div>' +
+    <div align="left" style="float:left;width:80%"><img src=' +'"' + EbeecareStaticFilesUrl  +  'ebk2.png" ></div>' +
         '<div id="EBKWidgetToggle" style="' + openCloseHolderClass + '" >+</div></div></a>';
     this.code += '<div id="EBKWidgetContent" style="height:100%;display:none;margin-top:0.7em;box-sizing:content-box;">';
     this.contactUsDiv = '<div align="left" style="float:left;width:80%"><img src="ebk2.png" >' +
@@ -813,7 +814,7 @@ SOE.prototype.setIframeInitialView = function() {
                 head.appendChild(style);
                 var loadingDiv = '<div name="SOLoadingMessage" class="SOLoadingMessage" style="box-sizing: border-box;min-height: 356px; margin: 0 auto;left: 0;right: 0; max-width: 796px; position: static; display: block; background-color: white; border-radius: 6px; z-index: 100000000; width: 100%;">';
                 loadingDiv += '<div id="BlueBox" class="blueBox gradient" style="height: 356px; border: 2px solid #8caec9; box-sizing: border-box; width: 100%; border-radius: 6px;"><div id="iframeContainer" class="whiteBox" style="  width: 100%; height: 100%; border-radius: 6px; min-width: 223px; box-sizing: content-box;  display: block;  background-color: #fff;"><div id="Navigation"></div><div id="WLoading" class="WLoading" style=" padding-top: 130px;  text-align: left;  cursor: wait;width:100%; max-width:' +
-                    (mCss ? 250 : 350) + 'px;  height: 50%;  background-color: #fff;  margin: 0 auto;"><h2 id="LoadingText" style="margin-bottom: 0px; text-align: center;font-size: ' + (mCss ? 16 : 18) + 'px; color: #333 !important;font-family: Tahoma, Verdana, Segoe, sans-serif;letter-spacing: 0rem;">Loading...</h2><div style="height: 20px;"></div><div style="width:100%;"><img id="loadingImage" alt="Loading..." style=" width: 100%; max-width:351px; height: 10px;" src="' + 'load_ani.gif" border="0" width="351" height="10"><div id="circle"><div id="circle_1" class="circle"></div><div id="circle_2" class="circle"></div><div id="circle_3" class="circle"></div><div id="circle_4" class="circle"></div><div id="circle_5" class="circle"></div><div id="circle_6" class="circle"></div><div id="circle_7" class="circle"></div><div id="circle_8" class="circle"></div><div id="circle_9" class="circle"></div><div id="circle_10" style="margin-right: 0px;" class="circle"></div><div class="clearfix"></div></div></div><div style="height: 20px;"></div><div id="timetxt" style="display: none"><span style="color: red;">This may take up to 30 seconds.<br>Do not close or refresh this page.</span></div></div></div></div></div></div></div>';
+                    (mCss ? 250 : 350) + 'px;  height: 50%;  background-color: #fff;  margin: 0 auto;"><h2 id="LoadingText" style="margin-bottom: 0px; text-align: center;font-size: ' + (mCss ? 16 : 18) + 'px; color: #333 !important;font-family: Tahoma, Verdana, Segoe, sans-serif;letter-spacing: 0rem;">Loading...</h2><div style="height: 20px;"></div><div style="width:100%;"><img id="loadingImage" alt="Loading..." style=" width: 100%; max-width:351px; height: 10px;" src="' +EbeecareStaticFilesUrl + 'load_ani.gif" border="0" width="351" height="10"><div id="circle"><div id="circle_1" class="circle"></div><div id="circle_2" class="circle"></div><div id="circle_3" class="circle"></div><div id="circle_4" class="circle"></div><div id="circle_5" class="circle"></div><div id="circle_6" class="circle"></div><div id="circle_7" class="circle"></div><div id="circle_8" class="circle"></div><div id="circle_9" class="circle"></div><div id="circle_10" style="margin-right: 0px;" class="circle"></div><div class="clearfix"></div></div></div><div style="height: 20px;"></div><div id="timetxt" style="display: none"><span style="color: red;">This may take up to 30 seconds.<br>Do not close or refresh this page.</span></div></div></div></div></div></div></div>';
                 allIfrm[i].parentNode.innerHTML = loadingDiv + allIfrm[i].parentNode.innerHTML
             }
 };
