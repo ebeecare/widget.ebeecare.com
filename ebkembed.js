@@ -70,12 +70,12 @@ SOE.prototype.getBookingCode = function() {
         <div style="width:100%;;margin-bottom:0.4em;">\
         <div style="float:right;width:56%">\
     <img src=' + '"' + EbeecareStaticFilesUrl  +'mm.png" style="max-width: 100%; height: auto;"></div>\
-        <div style="float:left;margin-top:30px;width:40%;display:inline-block">\
-        <p style="' + this.widgetMeinHeadStyle.replace("margin:0.8em auto;", "margin:" + (this.isMobileView ? "1em auto 0 auto;" : "0.8em auto 0.567em auto;")) + '"> ' +
+        <div style="float:left;margin-top:2em;width:40%;display:inline-block">\
+        <p style="font-family: Tahoma, HelveticaNeue, Arial;line-height: 1.4em;' + this.widgetMeinHeadStyle.replace("margin:0.8em auto;", "margin:" + (this.isMobileView ? "1em auto 0 auto;" : "0.8em auto 0.567em auto;")) + '"> ' +
             "Looking" + "</p>" +
-            '<p style="' + this.widgetMeinHeadStyle.replace("margin:0.8em auto;", "margin:" + (this.isMobileView ? "1em auto 0 auto;" : "0.8em auto 0.567em auto;")) + '"> ' +
+            '<p style="font-family: Tahoma, HelveticaNeue, Arial;line-height: 1.4em;' + this.widgetMeinHeadStyle.replace("margin:0.8em auto;", "margin:" + (this.isMobileView ? "1em auto 0 auto;" : "0.8em auto 0.567em auto;")) + '"> ' +
             this.decodeToHTML("for a") + "</p>" +
-            '<p style="' + this.widgetMeinHeadStyle.replace("margin:0.8em auto;", "margin:" + (this.isMobileView ? "1em auto 0 auto;" : "0.8em auto 0.567em auto;")) + '"> ' +
+            '<p style="font-family: Tahoma, HelveticaNeue, Arial;line-height: 1.4em;' + this.widgetMeinHeadStyle.replace("margin:0.8em auto;", "margin:" + (this.isMobileView ? "1em auto 0 auto;" : "0.8em auto 0.567em auto;")) + '"> ' +
             this.decodeToHTML("nurse?") + "</p>" +
             '<div style="padding:0px; margin-top:10px;margin-left:10px; width:100%;">' +
             '<div onclick="soe.toggleLightBox(' + this.pageName + ')" style="text-decoration:none;">\
